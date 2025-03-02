@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Responzivní webová stránka</title>
+  </head>
+  <body>
+    <header>
+      <section class="header-wrapper">
+        <nav>
+          <ul>
+            <li>
+              <a href="#Create_account"><span>Create account</span></a>
+            </li>
+
+            <li>
+              <a href="#About_wow"><span>About WoW</span></a>
+            </li>
+            <li>
+              <a href="#Popular_exp"><span>Popular Expansions</span></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="icon-menu"><img src="./menu/icon-menu.jpg" /></div>
+        <div class="switch-light">
+          <span class="light_description">
+            <p>Light mode</p>
+            <i class="fa-regular fa-sun"></i>
+            <!--- <i class="fa-solid fa-moon"></i>-->
+          </span>
+          <label class="switch-button">
+            <input type="checkbox" />
+            <span class="switch-slide"></span>
+          </label>
+        </div>
+      </section>
+    </header>
+    <!--- HERO SECTION--->
+    <div class="hero-section">
+      <div class="hero-text-wrapper">
+        <div class="hero-text">
+          <h1>The Best Of World of Warcraft</h1>
+        </div>
+      </div>
+    </div>
+    <!--- ABOUT 3 EXPANSIONS OF WOW-->
+    <div class="about-wow-container">
+      <section id="about_wow_section" class="about-wow">
+        <div class="photo-1 about"></div>
+        <div class="photo-2 about"></div>
+        <div class="photo-3 about"></div>
+      </section>
+    </div>
+
+    <!--- SIGN UP-->
+    <div class="sign_up_container">
+      <div class="wrapper">
+        <form action="">
+          <h1 id="Create_account">Login</h1>
+          <div class="input-box">
+            <input type="text" placeholder="Username" required />
+            <i class="bx bxs-user"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Password" required />
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Confirm password" required />
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+          <div class="remember-forget">
+            <label><input type="checkbox" /> Remember me</label>
+            <a href="#"> Forget Password? </a>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <div class="register-link">
+            <p>Don't have an account? <a href="#">Register</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--- ABOUT WOW-->
+    <div class="info_container">
+      <section class="wow_info">
+        <div class="infowow_photo">
+          <img src="wow_photos/whatiswow.jpg" alt="" />
+        </div>
+        <div class="whatIsWow_content">
+          <h2 id="About_wow">What is the World of Warcraft?</h2>
+          <p>
+            World of Warcraft (WoW) is a massively multiplayer online
+            role-playing game (MMORPG) developed by Blizzard Entertainment. Set
+            in the fantasy world of Azeroth, players create characters from
+            different races and classes, exploring vast landscapes, completing
+            quests, fighting monsters, and engaging in player-vs-player battles.
+            The game features an evolving story, dungeons, raids, and a deep
+            progression system with leveling, skills, and gear upgrades. Since
+            its 2004 release, WoW has remained one of the most popular MMORPGs,
+            regularly expanding with new content and updates. The top 3 popular
+            expansions for most of the gamers are The Burning Crusade, Cataclysm
+            & Shadowlands.
+          </p>
+        </div>
+      </section>
+    </div>
+    <!--- ABOUT TBC-->
+    <div class="about_tbc_container">
+      <section class="about">
+        <div class="tbc_image">
+          <img src="./wow_photos/tbc.jpg" />
+        </div>
+        <div class="tbc_text_content">
+          <h2 id="Popular_exp">The Burning Crusade</h2>
+          <p>
+            World of Warcraft: The Burning Crusade is the first expansion for
+            WoW, released in 2007. It introduces the shattered world of Outland,
+            where players battle the demonic Burning Legion and their allies.
+            The expansion raises the level cap from 60 to 70 and adds two new
+            playable races: Blood Elves for the Horde and Draenei for the
+            Alliance. It also introduces flying mounts, new dungeons, raids, and
+            the Arena PvP system. Players explore zones like Hellfire Peninsula
+            and Shadowmoon Valley, facing powerful enemies, including Illidan
+            Stormrage, Kael’thas Sunstrider, and Kil’jaeden, in an effort to
+            stop the Legion’s invasion.
+          </p>
+        </div>
+      </section>
+    </div>
+    <!--- ABOUT CATACLYSM-->
+    <div class="about_cata_container">
+      <section class="about_cata">
+        <div class="cata_image">
+          <img src="./wow_photos/cataclysm.jpg" />
+        </div>
+        <div class="cata_text_content">
+          <h2>Cataclysm</h2>
+          <p>
+            World of Warcraft: Cataclysm is the third expansion for WoW,
+            released in 2010. It dramatically reshapes Azeroth after the return
+            of the corrupted Dragon Aspect, Deathwing, who unleashes a
+            devastating catastrophe known as the Shattering. The expansion
+            raises the level cap to 85 and introduces two new playable races:
+            Goblins for the Horde and Worgen for the Alliance. Classic zones are
+            revamped, and new areas like Mount Hyjal and Deepholm are added.
+            Cataclysm also brings new dungeons, raids, rated battlegrounds, and
+            the ability for players to use flying mounts in the old world. The
+            expansion focuses on stopping Deathwing and his destructive forces.
+          </p>
+        </div>
+      </section>
+    </div>
+    <!---  ABOUT SHADOWLANDS -->
+    <div class="about_shadowlands_container">
+      <section class="about_shadowlands">
+        <div class="shadowlands_image">
+          <img src="./wow_photos/shadowlands.jpg" />
+        </div>
+        <div class="shadowlands_text_content">
+          <h2>Shadowlands</h2>
+          <p>
+            World of Warcraft: Shadowlands is the eighth expansion for WoW,
+            released in 2020. It takes players to the Shadowlands, the afterlife
+            of Azeroth, after Sylvanas Windrunner shatters the barrier between
+            life and death. The expansion introduces Covenants—four factions
+            that players align with for unique abilities and rewards. It also
+            adds the Torghast dungeon, a roguelike-style experience, and revamps
+            the leveling system, reducing the max level to 60. Players face
+            threats like the Jailer and uncover the mysteries of the afterlife
+            while restoring balance to the Shadowlands.
+          </p>
+        </div>
+      </section>
+    </div>
+    <!--- FOOTER SECTION-->
+    <footer>
+      <p>©2025 Blizzard Entertainment, Inc.</p>
+      <p>
+        <button id="scrollUp" class="scroll_to_up">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

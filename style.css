@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+/* MENU SECTION */
+
+.header-wrapper {
+  width: 100%;
+  background-color: #33292a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  width: 850px;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+nav li {
+  padding: 10px;
+  text-align: center;
+  flex-wrap: nowrap;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.icon-menu {
+  display: none;
+  height: 35px;
+  width: 35px;
+  margin-left: auto;
+  margin-right: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  background-image: url(./hero_section/header-pic.jpg);
+  height: 100vh;
+  padding-top: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-text-wrapper {
+  max-width: 856px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 300px;
+  padding-bottom: 200px;
+}
+
+.hero-text {
+  color: #fff;
+  position: absolute;
+  padding: 30px;
+  right: 20px;
+  bottom: 20px;
+  font-weight: 700;
+  text-align: right;
+  font-size: 40px;
+}
+
+/* ABOUT WOW SECTION */
+
+.about-wow-container {
+  background-color: #33292a;
+}
+.about-wow {
+  display: grid;
+  gap: 10px;
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.about {
+  height: 400px;
+  width: 100%;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 1;
+}
+
+.photo-1 {
+  background-image: url(./about_wow_img/tbc.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.photo-2 {
+  background-image: url(./about_wow_img/cata.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.photo-3 {
+  background-image: url(./about_wow_img/shl.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.photo-1:hover,
+.photo-2:hover,
+.photo-3:hover {
+  transform: scale(1.05);
+  z-index: 2;
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+/* SIGN UP SECTION */
+
+.sign_up_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(./login/login.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(1px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: #ffffff;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.wrapper .remember-forget {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forget label input {
+  accent-color: #242323;
+  margin-right: 3px;
+}
+
+.remember-forget a {
+  color: #fff;
+  text-decoration: none;
+}
+.remember-forget a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.wrapper .btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  border-color: #fff;
+}
+
+.wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+/* WHAT IS WOW */
+
+.info_container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #33292a;
+  color: #fff;
+}
+
+.wow_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.infowow_photo {
+  flex: 1;
+  margin-right: 40px;
+  overflow: hidden;
+}
+
+.infowow_photo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.5s ease;
+}
+
+.infowow_photo:hover img {
+  transform: scale(1.2);
+}
+
+.whatIsWow_content {
+  flex: 1;
+}
+/* TBC SECTION */
+
+.about_tbc_container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #33292a;
+  color: #fff;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tbc_image {
+  flex: 1;
+  margin-right: 40px;
+  overflow: hidden;
+}
+
+.tbc_image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.5s ease;
+}
+
+.tbc_image:hover img {
+  transform: scale(1.2);
+}
+
+.tbc_text_content {
+  flex: 1;
+}
+
+/* CATACLYSM SECTION */
+.about_cata_container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #33292a;
+  color: #fff;
+}
+
+.about_cata {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cata_image {
+  flex: 1;
+  margin-right: 40px;
+  overflow: hidden;
+}
+
+.cata_image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.5s ease;
+}
+
+.cata_image:hover img {
+  transform: scale(1.2);
+}
+
+.cata_text_content {
+  flex: 1;
+}
+
+/* SHADOWLANDS SECTION */
+.about_shadowlands_container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #33292a;
+  color: #fff;
+}
+
+.about_shadowlands {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.shadowlands_image {
+  flex: 1;
+  margin-right: 40px;
+  overflow: hidden;
+}
+
+.shadowlands_image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.5s ease;
+}
+
+.shadowlands_image:hover img {
+  transform: scale(1.2);
+}
+
+.shadowlands_text_content {
+  flex: 1;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  background-color: #b68a8a;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+}
+
+#scrollUp {
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 0px 50px;
+  padding: 5px 15px;
+  background-color: #9c8181;
+  transition: opacity 0.5s, visibility 0.4s;
+  z-index: 1000;
+}
+
+#scrollUp:hover {
+  background-color: #a37171;
+}

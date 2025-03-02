@@ -1,0 +1,170 @@
+/* MENU SECTION */
+
+@media screen and (max-width: 768px) {
+  .header-wrapper {
+    justify-content: flex-end;
+    position: relative;
+  }
+  .header-wrapper nav {
+    display: none;
+    position: absolute;
+    top: 130px;
+    width: 100%;
+  }
+
+  .header-wrapper nav li {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .icon-menu {
+    display: block;
+    margin-right: 40px;
+  }
+
+  .about_wow_section {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .light_description {
+    display: none;
+  }
+}
+
+/* HERO SECTION */
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 24px;
+  }
+  .hero-section {
+    height: 780px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-wow {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+
+/* ABOUT WOW */
+
+@media (max-width: 768px) {
+  .info_container {
+    flex-direction: column;
+    align-items: center;
+    column-gap: 30px;
+  }
+
+  .wow_info {
+    text-align: center;
+    order: 2;
+    flex-direction: column;
+  }
+
+  img {
+    object-fit: contain;
+    height: auto;
+    width: 100%;
+    order: 1;
+    align-items: center;
+  }
+
+  .infowow_photo {
+    width: 100%;
+  }
+
+  .whatIsWow_content {
+    width: 100%;
+  }
+}
+
+/* TBC SECTION */
+
+@media (max-width: 768px) {
+  .about_tbc_container {
+    flex-direction: column;
+    align-items: center;
+    column-gap: 30px;
+  }
+
+  .about {
+    text-align: center;
+    order: 1;
+    flex-direction: column;
+  }
+
+  .tbc_image {
+    object-fit: contain;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    order: 2;
+  }
+
+  .tbc_text_content {
+    width: 100%;
+  }
+}
+
+/* CATACLYSM SECTION */
+
+@media (max-width: 768px) {
+  .about_cata_container {
+    flex-direction: column;
+    align-items: center;
+    column-gap: 30px;
+  }
+
+  .about_cata {
+    text-align: center;
+    order: 1;
+    flex-direction: column;
+  }
+
+  .cata_image {
+    object-fit: contain;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    order: 2;
+  }
+
+  .cata_text_content {
+    width: 100%;
+  }
+}
+
+/* SHADOWLANDS SECTION */
+
+@media (max-width: 768px) {
+  .about_shadowlands_container {
+    flex-direction: column;
+    align-items: center;
+    column-gap: 30px;
+  }
+  .about_shadowlands {
+    text-align: center;
+    order: 1;
+    flex-direction: column;
+  }
+  .shadowlands_image {
+    object-fit: contain;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    order: 2;
+  }
+
+  .shadowlands_text_content {
+    width: 100%;
+  }
+}
