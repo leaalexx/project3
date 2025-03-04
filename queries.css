@@ -41,25 +41,6 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  /*.header-wrapper nav {
-    display: none;
-    position: fixed;
-    top: 70px;
-    left: -100%;
-    gap: 0;
-    flex-direction: column;
-    background-color: #33292a;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-  }*/
-
-  /*.header-wrapper nav li {
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }*/
 
   .icon-menu {
     display: block;
@@ -67,9 +48,10 @@
     font-size: 25px;
   }
 
-  .about_wow_section {
+  #about_wow_section {
     max-width: 100%;
     flex: 1 1 100%;
+    object-fit: cover;
   }
 
   .light_description {
@@ -89,10 +71,8 @@
 }
 
 @media (max-width: 768px) {
-  .about-wow {
+  #about_wow_section {
     grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 0;
     margin: 0 auto;
     max-width: 100%;
   }
@@ -119,14 +99,19 @@
     width: 100%;
     order: 1;
     align-items: center;
+    margin: 0 auto;
   }
 
   .infowow_photo {
     width: 100%;
+    margin: 0 auto;
   }
 
   .whatIsWow_content {
     width: 100%;
+    margin: 0 auto;
+    display: block;
+    align-items: center;
   }
 }
 
@@ -134,22 +119,23 @@
 
 @media (max-width: 768px) {
   .about_tbc_container {
-    flex-direction: column;
-    align-items: center;
-    column-gap: 30px;
+    column-gap: 10px;
+    max-width: 100%;
+    text-align: center;
   }
 
-  .about {
-    text-align: center;
-    order: 1;
-    flex-direction: column;
+  .about_tbc_content {
+    order: 2;
+    flex-direction: column-reverse;
+    max-width: 100%;
   }
 
   .tbc_image {
     object-fit: contain;
-    height: auto;
+    max-height: none;
     width: 100%;
-    order: 2;
+    order: 1;
+    margin: 0 auto;
   }
 
   .tbc_image img {
@@ -157,7 +143,8 @@
   }
 
   .tbc_text_content {
-    width: 100%;
+    margin-bottom: 300px;
+    max-width: 100%;
   }
 }
 
@@ -182,6 +169,7 @@
     width: 100%;
     max-width: 100%;
     order: 2;
+    margin: 0 auto;
   }
 
   .cata_image img {
@@ -190,6 +178,7 @@
 
   .cata_text_content {
     width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -197,12 +186,13 @@
 
 @media (max-width: 768px) {
   .about_shadowlands_container {
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     column-gap: 30px;
   }
   .about_shadowlands {
-    text-align: center;
     order: 1;
     flex-direction: column;
   }
@@ -212,9 +202,55 @@
     width: 100%;
     max-width: 100%;
     order: 2;
+    margin: 0 auto;
   }
 
   .shadowlands_text_content {
     width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* MQ PŘEKRÝVÁNÍ OBRÁZKŮ/TEXTU */
+
+@media (max-width: 768px) {
+  .tbc_text_content,
+  .cata_text_content,
+  .shadowlands_text_content,
+  .whatIsWow_content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 200px; /* Nastaví minimální výšku, aby se text neroztahoval */
+    margin-bottom: 20px; /* Oddělí text od obrázku */
+  }
+
+  .about_tbc_container,
+  .about_cata_container,
+  .about_shadowlands_container,
+  .info_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .tbc_image img,
+  .cata_image img,
+  .shadowlands_image img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Uprav podle potřeby */
+    display: block;
+  }
+
+  .about_tbc,
+  .about_cata,
+  .about_shadowlands {
+    margin-bottom: 50px; /* Oddělení sekcí */
   }
 }
