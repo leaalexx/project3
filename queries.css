@@ -222,8 +222,8 @@
     z-index: 2;
     padding: 20px;
     border-radius: 10px;
-    min-height: 200px; /* Nastaví minimální výšku, aby se text neroztahoval */
-    margin-bottom: 20px; /* Oddělí text od obrázku */
+    min-height: 200px;
+    margin-bottom: 20px;
   }
 
   .about_tbc_container,
@@ -244,13 +244,13 @@
   .shadowlands_image img {
     width: 100%;
     height: auto;
-    max-height: 400px; /* Uprav podle potřeby */
+    max-height: 400px;
     display: block;
   }
 
   .about_tbc,
   .about_cata,
   .about_shadowlands {
-    margin-bottom: 50px; /* Oddělení sekcí */
+    margin-bottom: 50px;
   }
 }
