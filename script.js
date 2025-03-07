@@ -20,6 +20,14 @@ iconMenu.addEventListener("click", () => {
   }
 });
 
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768) {
+    listMenu.style.display = "flex";
+  } else if (!listMenu.classList.contains("active")) {
+    listMenu.style.display = "none";
+  }
+});
+
 document.querySelectorAll(".nav-link").forEach((n) =>
   n.addEventListener("click", () => {
     iconMenu.classList.remove("active");

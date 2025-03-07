@@ -18,10 +18,10 @@
     position: absolute;
     order: 2;
     left: -100%;
-    top: 30px;
+    top: 0px;
     gap: 0;
     flex-direction: column;
-    background-color: #33292a;
+    background-color: var(--main-color);
     width: 100%;
     text-align: center;
     transition: 0.5s;
@@ -42,10 +42,12 @@
     margin-bottom: 10px;
   }
 
-  .icon-menu {
+  .icon-menu,
+  #theme-switch {
     display: block;
     margin-right: 40px;
     font-size: 25px;
+    z-index: 1000;
   }
 
   #about_wow_section {
@@ -53,9 +55,17 @@
     flex: 1 1 100%;
     object-fit: cover;
   }
+}
 
-  .light_description {
-    display: none;
+@media screen and (min-width: 769px) {
+  .header-wrapper ul {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    width: auto;
+    text-align: left;
+    transition: none;
   }
 }
 
@@ -185,14 +195,8 @@
 /* SHADOWLANDS SECTION */
 
 @media (max-width: 768px) {
-  .about_shadowlands_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    column-gap: 30px;
-  }
   .about_shadowlands {
+    text-align: center;
     order: 1;
     flex-direction: column;
   }
